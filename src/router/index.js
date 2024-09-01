@@ -1,15 +1,23 @@
-import Vue from 'vue';
-import Router from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
+import Home from '../components/Home.vue';
 import DonationForm from '../components/DonationForm.vue';
 
-Vue.use(Router);
+const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/spende',
+    name: 'Spende',
+    component: DonationForm
+  }
+];
 
-export default new Router({
-  routes: [
-    {
-      path: '/spende',
-      name: 'Spende',
-      component: DonationForm
-    }
-  ]
+const router = createRouter({
+  history: createWebHistory('/'),  // Entferne process.env.BASE_URL und ersetze es durch '/'
+  routes
 });
+
+export default router;
