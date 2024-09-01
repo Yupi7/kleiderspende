@@ -1,7 +1,6 @@
 <template>
   <footer>
-    <p>© 2024 Dein Unternehmen. Alle Rechte vorbehalten.</p>
-    <p><a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
+    <p>&copy; 2024 Kleiderspende Verein - Alle Rechte vorbehalten.</p>
   </footer>
 </template>
 
@@ -11,20 +10,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 footer {
   background-color: #333;
-  color: #fff;
+  color: white;
   text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 0.5rem;
+  padding: 10px;
 }
 </style>

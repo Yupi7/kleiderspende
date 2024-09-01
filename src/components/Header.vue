@@ -1,11 +1,13 @@
 <template>
   <header>
+    <div class="logo">
+      <img src="@/assets/logo.png" alt="Logo" />
+      <h1>Kleiderspende</h1>
+    </div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/spende">Spende registrieren</router-link></li>
       </ul>
     </nav>
   </header>
@@ -17,21 +19,41 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #333;
-  color: #fff;
-  padding: 1rem;
+  color: white;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 10px;
 }
 
 nav ul {
-  display: flex;
   list-style: none;
-  justify-content: space-around;
+  display: flex;
 }
 
-nav ul li a {
-  color: #fff;
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
   text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 </style>

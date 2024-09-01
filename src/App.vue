@@ -2,16 +2,15 @@
   <div id="app">
     <Header />
     <main>
-      <h1>Hello Konya</h1>
-      <p>Hier ist der Konya-Bereich deiner Webseite.</p>
+      <router-view />
     </main>
     <Footer />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
@@ -24,14 +23,15 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
-  padding: 2rem;
-  min-height: 80vh;
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 </style>
