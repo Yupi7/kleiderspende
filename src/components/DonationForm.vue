@@ -25,8 +25,11 @@
       <label>
         Krisengebiet:
         <select v-model="crisisArea" required>
-          <option value="Gebiet1">Gebiet 1</option>
-          <option value="Gebiet2">Gebiet 2</option>
+          <option value="Nordafrika">Nordafrika</option>
+          <option value="Zentralafrika">Zentralafrika</option>
+          <option value="Südafrika">Südafrika</option>
+          <option value="Naher-Osten">Naher-Osten</option>
+          <option value="Mittelost-Asien">Mittelost-Asien</option>
         </select>
       </label>
 

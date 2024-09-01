@@ -1,9 +1,12 @@
 <template>
   <div class="home">
-    <h2>Willkommen bei der Kleiderspende</h2>
+    <h2>Willkommen bei der IU Kleiderspende</h2>
     <p>
-      Wir sammeln Kleidung für bedürftige Menschen in Krisengebieten. Sie können Ihre Kleidung
-      entweder an unserer Geschäftsstelle abgeben oder ein Sammelfahrzeug zur Abholung anfordern.
+      Wir haben es uns zur Aufgaben gemacht, Menschen in Not zu helfen.
+      Sie können nun ein Teil davon werden!
+      Sie haben Klamotten die Sie nicht mehr benötigen aber nicht wissen wohin damit?
+      Wir nehmen sie Ihnen gerne ab!
+      Sie können Ihre Kleidung entweder an unserer Geschäftsstelle abgeben oder ein Sammelfahrzeug zur Abholung anfordern.
     </p>
     <router-link to="/spende" class="btn">Spende registrieren</router-link>
   </div>
