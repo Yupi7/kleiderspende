@@ -27,9 +27,12 @@
         <select v-model="crisisArea" required>
           <option value="Nordafrika">Nordafrika</option>
           <option value="Zentralafrika">Zentralafrika</option>
+          <option value="Westafrika">Westafrika</option>
+          <option value="Ostafrika">Ostafrika</option>
           <option value="Südafrika">Südafrika</option>
           <option value="Naher-Osten">Naher-Osten</option>
-          <option value="Mittelost-Asien">Mittelost-Asien</option>
+          <option value="Südasien">Südasien</option>
+          <option value="Südostasien">Südostasien</option>
         </select>
       </label>
 
