@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../components/Home.vue';
 import DonationForm from '../components/DonationForm.vue';
-import Contact from '../views/Contact.vue';  // Importiere die Contact.vue-Seite
+import Contact from '../views/Contact.vue';
+import Areas from '../views/Areas.vue';
 
 const routes = [
   {
@@ -15,9 +16,14 @@ const routes = [
     component: DonationForm
   },
   {
-    path: '/kontakt',  // Neue Route für die Kontaktseite
+    path: '/kontakt',
     name: 'Kontakt',
     component: Contact
+  },
+  {
+    path: '/kriesengebiete',
+    name: 'Kriesengebiete',
+    component: Areas
   }
 ];
 

@@ -45,7 +45,7 @@
       <p>Krisengebiet: {{ crisisArea }}</p>
       <p>Datum: {{ new Date().toLocaleDateString() }}</p>
       <p>Uhrzeit: {{ new Date().toLocaleTimeString() }}</p>
-      <p>Ort: {{ donationType === 'pickup' ? address : 'IU Kleiderspende Durlacher Straße 93 68219 Mannheim' }}</p>
+      <p>Ort: {{ donationType === 'pickup' ? address : 'IU Kleiderspende, Durlacher Straße 93, 68219 Mannheim' }}</p>
     </div>
   </div>
 </template>
@@ -94,8 +94,8 @@ form label {
 
 form input, form select {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 20px;
+  padding: 7px;
+  margin-bottom: 10px;
 }
 
 button {

@@ -7,8 +7,9 @@
     <nav>
       <ul>
         <li><router-link to="/">Home</router-link></li>
+        <li><router-link to="/kriesengebiete">Kriesengebiete</router-link></li>
         <li><router-link to="/spende">Spende registrieren</router-link></li>
-        <li><router-link to="/kontakt">Kontakt</router-link></li> <!-- Neuer Link hinzugefügt -->
+        <li><router-link to="/kontakt">Kontakt</router-link></li>
       </ul>
     </nav>
   </header>
