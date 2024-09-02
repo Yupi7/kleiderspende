@@ -18,7 +18,7 @@ export default {
   data() {
     return {
       facebookUrl: 'https://www.facebook.com',
-      instagramUrl: 'https://www.instagram.com/yourprofile',
+      instagramUrl: 'https://www.instagram.com',
     };
   }
 }
