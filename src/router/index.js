@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../components/Home.vue';
 import DonationForm from '../components/DonationForm.vue';
+import Contact from '../views/Contact.vue';  // Importiere die Contact.vue-Seite
 
 const routes = [
   {
@@ -12,12 +13,18 @@ const routes = [
     path: '/spende',
     name: 'Spende',
     component: DonationForm
+  },
+  {
+    path: '/kontakt',  // Neue Route für die Kontaktseite
+    name: 'Kontakt',
+    component: Contact
   }
 ];
 
 const router = createRouter({
-  history: createWebHistory('/'),  // Entferne process.env.BASE_URL und ersetze es durch '/'
+  history: createWebHistory('/'),  // Nutze den Basis-URL-Pfad
   routes
 });
 
 export default router;
+

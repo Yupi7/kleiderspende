@@ -2,12 +2,13 @@
   <header>
     <div class="logo">
       <img src="@/assets/logo.png" alt="Logo" />
-      <h1>Kleiderspende</h1>
+      <h1>IU Kleiderspende - Wir helfen Menschen</h1>
     </div>
     <nav>
       <ul>
         <li><router-link to="/">Home</router-link></li>
         <li><router-link to="/spende">Spende registrieren</router-link></li>
+        <li><router-link to="/kontakt">Kontakt</router-link></li> <!-- Neuer Link hinzugefügt -->
       </ul>
     </nav>
   </header>
@@ -24,8 +25,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  color: white;
+  background-color: #e1e8ed;
+  color: black;
   padding: 10px;
 }
 
@@ -35,7 +36,7 @@ header {
 }
 
 .logo img {
-  height: 50px;
+  height: 120px;
   margin-right: 10px;
 }
 
@@ -49,7 +50,7 @@ nav li {
 }
 
 nav a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 

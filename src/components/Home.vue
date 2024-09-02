@@ -2,9 +2,9 @@
   <div class="home">
     <h2>Willkommen bei der IU Kleiderspende</h2>
     <p>
-      Wir haben es uns zur Aufgaben gemacht, Menschen in Not zu helfen.
+      Wir haben es uns zur Aufgabe gemacht, Menschen in Not zu helfen.
       Sie können nun ein Teil davon werden!
-      Sie haben Klamotten die Sie nicht mehr benötigen aber nicht wissen wohin damit?
+      Sie haben Klamotten, die Sie nicht mehr benötigen, aber nicht wissen, wohin damit?
       Wir nehmen sie Ihnen gerne ab!
       Sie können Ihre Kleidung entweder an unserer Geschäftsstelle abgeben oder ein Sammelfahrzeug zur Abholung anfordern.
     </p>
