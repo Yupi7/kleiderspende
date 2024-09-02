@@ -1,6 +1,6 @@
 <template>
   <div class="areas">
-    <h2>Gebiete die wir Unterstützen</h2>
+    <h2>Gebiete die wir unterstützen</h2>
     <p>
       Nordafrika:
     </p>
