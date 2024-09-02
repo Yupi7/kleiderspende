@@ -42,7 +42,7 @@
       <p>Krisengebiet: {{ crisisArea }}</p>
       <p>Datum: {{ new Date().toLocaleDateString() }}</p>
       <p>Uhrzeit: {{ new Date().toLocaleTimeString() }}</p>
-      <p>Ort: {{ donationType === 'pickup' ? address : 'Geschäftsstelle' }}</p>
+      <p>Ort: {{ donationType === 'pickup' ? address : 'IU Kleiderspende Durlacher Straße 93 68219 Mannheim' }}</p>
     </div>
   </div>
 </template>
@@ -67,7 +67,7 @@ export default {
       this.success = true;
     },
     isAddressValid() {
-      const storeZipCode = '12345'; // Beispiel-PLZ der Geschäftsstelle
+      const storeZipCode = '68219'; // Beispiel-PLZ der Geschäftsstelle
       return this.address.startsWith(storeZipCode.slice(0, 2));
     }
   }

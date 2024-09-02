@@ -8,7 +8,7 @@
       Wir nehmen sie Ihnen gerne ab!
       Sie können Ihre Kleidung entweder an unserer Geschäftsstelle abgeben oder ein Sammelfahrzeug zur Abholung anfordern.
     </p>
-    <router-link to="/spende" class="btn">Spende registrieren</router-link>
+    <router-link to="/spende" class="btn">Jetzt Spenden</router-link>
   </div>
 </template>
 
