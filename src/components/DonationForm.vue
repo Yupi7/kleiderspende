@@ -5,26 +5,29 @@
       <label>
         Übergabeoption:
         <select v-model="donationType">
-          <option value="store">Übergabe an der Geschäftsstelle</option>
-          <option value="pickup">Abholung</option>
+          <option value="store">Übergabe an unserem Standort</option>
+          <option value="pickup">Sammelfahrzeug zur Abholung</option>
         </select>
       </label>
 
       <div v-if="donationType === 'pickup'">
         <label>
           Abholadresse:
-          <input type="text" v-model="address" required />
+          <input type="text" v-model="address" placeholder="Straße" required />
+          <input type="text" v-model="zipcode" placeholder="Postleitzahl" required />
+          <input type="text" v-model="city" placeholder="Stadt" required />
         </label>
       </div>
 
       <label>
         Art der Kleidung:
-        <input type="text" v-model="clothingType" required />
+        <input type="text" v-model="clothingType" placeholder="z.B. Pullover" required />
       </label>
 
       <label>
         Krisengebiet:
-        <select v-model="crisisArea" required>
+        <select v-model="crisisArea">
+          <option value="" disabled selected>Wählen Sie die Region</option>
           <option value="Nordafrika">Nordafrika</option>
           <option value="Zentralafrika">Zentralafrika</option>
           <option value="Westafrika">Westafrika</option>
@@ -38,6 +41,7 @@
       
     <div v-if="crisisArea === 'Nordafrika'">
       <label>
+        Land:
         <select v-model="country">
           <option value="Marokko">Marokko</option>
           <option value="Tunesien">Tunesien</option>
@@ -50,6 +54,7 @@
 
     <div v-if="crisisArea === 'Zentralafrika'">
       <label>
+        Land:
         <select v-model="country">
           <option value="Angola">Angola</option>
           <option value="Kamerun">Kamerun</option>
@@ -60,6 +65,7 @@
 
      <div v-if="crisisArea === 'Ostafrika'">
       <label>
+        Land:
         <select v-model="country">
           <option value="Kenia">Kenia</option>
           <option value="Tansania">Tansania</option>
@@ -74,6 +80,7 @@
 
     <div v-if="crisisArea === 'Westafrika'">
       <label>
+        Land:
         <select v-model="country">
           <option value="Ghana">Ghana</option>
           <option value="Mali">Mali</option>
@@ -87,6 +94,7 @@
 
     <div v-if="crisisArea === 'Südafrika'">
       <label>
+        Land:
         <select v-model="country">
           <option value="Mosambik">Mosambik</option>
           <option value="Simbabwe">Simbabwe</option>
@@ -98,6 +106,7 @@
 
     <div v-if="crisisArea === 'Naher-Osten'">
       <label>
+        Land:
         <select v-model="country">
           <option value="Palästina">Palästina</option>
           <option value="Syrien">Syrien</option>
@@ -108,6 +117,7 @@
 
     <div v-if="crisisArea === 'Südasien'">
       <label>
+        Land:
         <select v-model="country">
           <option value="Bangladesh">Bangladesh</option>
           <option value="Bhudan">Bhudan</option>
@@ -119,6 +129,7 @@
 
     <div v-if="crisisArea === 'Südostasien'">
       <label>
+        Land:
         <select v-model="country">
           <option value="Brunei Darussalam">Brunei Darussalam</option>
           <option value="Indonesien">Indonesien</option>
@@ -139,7 +150,9 @@
       <p>Land: {{ country }}</p>
       <p>Datum: {{ new Date().toLocaleDateString() }}</p>
       <p>Uhrzeit: {{ new Date().toLocaleTimeString() }}</p>
-      <p>Ort: {{ donationType === 'pickup' ? address : 'IU Kleiderspende, Durlacher Straße 93, 68219 Mannheim' }}</p>
+      <p>Ort: {{ donationType === 'pickup' ? address : 'Durlacher Straße 93' }}</p> 
+      <p>Postleitzahl: {{ donationType === 'pickup' ? zipcode : '68219' }}</p>
+      <p>Stadt: {{ donationType === 'pickup' ? city : 'Mannheim' }}</p>
     </div>
   </div>
 </template>
@@ -158,14 +171,14 @@ export default {
   methods: {
     submitForm() {
       if (this.donationType === 'pickup' && !this.isAddressValid()) {
-        alert('Die Abholadresse liegt nicht in der Nähe der Geschäftsstelle.');
+        alert('Bitte entschuldigen Sie! Die angegebene Adresse liegt leider nicht in unserem Abholradius. Sie können die Klamotten jedoch gerne vor Ort abgeben. Vielen Dank!');
         return;
       }
       this.success = true;
     },
     isAddressValid() {
-      const storeZipCode = '68219'; // Beispiel-PLZ der Geschäftsstelle
-      return this.address.startsWith(storeZipCode.slice(0, 2));
+      const storeZipCode = '68219';
+      return this.zipcode.startsWith(storeZipCode.slice(0, 2));
     }
   }
 }
@@ -202,5 +215,9 @@ button {
 
 button:hover {
   background-color: #555;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #888
 }
 </style>
