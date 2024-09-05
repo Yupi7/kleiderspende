@@ -1,3 +1,29 @@
+<script>
+export default {
+  data() {
+    return {
+      name: '',
+      email: '',
+      message: '',
+      formSubmitted: false,
+    };
+  },
+  methods: {
+    submitForm() {
+      console.log({
+        name: this.name,
+        email: this.email,
+        message: this.message,
+      });
+      this.formSubmitted = true;
+      this.name = '';
+      this.email = '';
+      this.message = '';
+    },
+  },
+};
+</script>
+
 <template>
   <div class="contact-form">
     <h2>Kontaktieren Sie uns</h2>
@@ -25,32 +51,6 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      name: '',
-      email: '',
-      message: '',
-      formSubmitted: false,
-    };
-  },
-  methods: {
-    submitForm() {
-      console.log({
-        name: this.name,
-        email: this.email,
-        message: this.message,
-      });
-      this.formSubmitted = true;
-      this.name = '';
-      this.email = '';
-      this.message = '';
-    },
-  },
-};
-</script>
 
 <style scoped>
 .contact-form {

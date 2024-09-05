@@ -1,3 +1,30 @@
+<script>
+export default {
+  data() {
+    return {
+      donationType: 'store',
+      address: '',
+      clothingType: '',
+      crisisArea: '',
+      success: false
+    };
+  },
+  methods: {
+    submitForm() {
+      if (this.donationType === 'pickup' && !this.isAddressValid()) {
+        alert('Bitte entschuldigen Sie! Die angegebene Adresse liegt leider nicht in unserem Abholradius. Sie können die Klamotten jedoch gerne vor Ort abgeben. Vielen Dank!');
+        return;
+      }
+      this.success = true;
+    },
+    isAddressValid() {
+      const storeZipCode = '68219';
+      return this.zipcode.startsWith(storeZipCode.slice(0, 2));
+    }
+  }
+}
+</script>
+
 <template>
   <div class="donation-form">
     <h2>Kleiderspende registrieren</h2>
@@ -156,33 +183,6 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      donationType: 'store',
-      address: '',
-      clothingType: '',
-      crisisArea: '',
-      success: false
-    };
-  },
-  methods: {
-    submitForm() {
-      if (this.donationType === 'pickup' && !this.isAddressValid()) {
-        alert('Bitte entschuldigen Sie! Die angegebene Adresse liegt leider nicht in unserem Abholradius. Sie können die Klamotten jedoch gerne vor Ort abgeben. Vielen Dank!');
-        return;
-      }
-      this.success = true;
-    },
-    isAddressValid() {
-      const storeZipCode = '68219';
-      return this.zipcode.startsWith(storeZipCode.slice(0, 2));
-    }
-  }
-}
-</script>
 
 <style>
 .donation-form {
