@@ -16,7 +16,7 @@ export default {
     <nav>
       <ul>
         <li><router-link to="/impressum">Impressum</router-link></li>
-        <li><router-link to="/datenschutz">Datenschutzerklärung</router-link></li>
+        <li><router-link to="/datenschutz">Datenschutz</router-link></li>
       </ul>
     </nav>
     <div class="social-links">
