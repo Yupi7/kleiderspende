@@ -5,8 +5,8 @@ export default {
 </script>
 
 <template>
-  <div class="areas">
-    <h2>Gebiete die wir unterstützen</h2>
+  <div class="areas-box">
+    <h2><u>Gebiete die wir unterstützen</u></h2>
     <h3>
       Nordafrika:
     </h3>
@@ -59,9 +59,14 @@ export default {
 </template>
 
 <style>
-.areas {
-  text-align: center;
+.areas-box {
+   background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
   padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  text-align: center;
 }
 
 .areas h2 {

@@ -26,7 +26,7 @@ export default {
 
 <template>
   <div class="contact-form">
-    <h2>Kontaktieren Sie uns</h2>
+    <h2><u>Kontaktieren Sie uns</u></h2>
     <form @submit.prevent="submitForm">
       <div class="form-group">
         <label for="name">Name</label>
@@ -54,9 +54,10 @@ export default {
 
 <style scoped>
 .contact-form {
-  max-width: 600px;
+  background-color: #f9f9f9;
+  max-width: 300px;
   margin: 0 auto;
-  padding: 70px;
+  padding: 40px;
   border: 1px solid #ddd;
   border-radius: 10px;
 }

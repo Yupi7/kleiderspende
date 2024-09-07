@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div class="datenschutz">
-    <h1>Datenschutzerklärung</h1>
+    <h1><u>Datenschutzerklärung</u></h1>
 
     <h2>I. Informationen über die Verarbeitung Ihrer Daten gemäß Art. 13 der Datenschutz-Grundverordnung (DS-GVO)</h2>
     

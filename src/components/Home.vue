@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div class="home">
-    <h2>Willkommen bei der IU Kleiderspende</h2>
+    <h2><u>Willkommen bei der IU Kleiderspende</u></h2>
     <p>
       Wir haben es uns zur Aufgabe gemacht, Menschen in Not zu helfen.
       Sie können nun ein Teil davon werden!

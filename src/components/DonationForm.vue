@@ -27,7 +27,7 @@ export default {
 
 <template>
   <div class="donation-form">
-    <h2>Kleiderspende registrieren</h2>
+    <h2><u>Kleiderspende registrieren</u></h2>
     <form @submit.prevent="submitForm">
       <label>
         Übergabeoption:

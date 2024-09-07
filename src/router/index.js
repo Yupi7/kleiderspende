@@ -5,6 +5,7 @@ import Contact from '../views/Contact.vue';
 import Areas from '../views/Areas.vue';
 import Impressum from '../views/Impressum.vue'
 import Datenschutz from '../views/Datenschutz.vue'
+import BusinessHours from '../views/BusinessHours.vue'
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: '/datenschutz',
     name: 'Datenschutz',
     component: Datenschutz
+  },
+  {
+    path: '/oeffnungszeiten',
+    name: 'Öffnungszeiten',
+    component: BusinessHours
   }
 ];
 

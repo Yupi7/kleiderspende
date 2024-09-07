@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div class="impressum">
-    <h1>Impressum</h1>
+    <h1><u>Impressum</u></h1>
     
     <p><strong>Verein:</strong> IU Kleiderspende e.V.</p>
 
