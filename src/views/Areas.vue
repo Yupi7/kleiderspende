@@ -1,9 +1,3 @@
-<script>
-export default {
-  name: 'Areas'
-}
-</script>
-
 <template>
   <div class="areas-box">
     <h2><u>Gebiete die wir unterstützen</u></h2>
@@ -57,6 +51,12 @@ export default {
     </p>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'Areas'
+}
+</script>
 
 <style>
 .areas-box {

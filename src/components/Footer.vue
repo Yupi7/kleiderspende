@@ -1,15 +1,3 @@
-<script>
-export default {
-  name: 'Footer',
-  data() {
-    return {
-      facebookUrl: 'https://www.facebook.com',
-      instagramUrl: 'https://www.instagram.com',
-    };
-  }
-}
-</script>
-
 <template>
   <footer>
     <p>&copy; 2024 IU Kleiderspende e.V. - Alle Rechte vorbehalten.</p>
@@ -29,6 +17,18 @@ export default {
     </div>
   </footer>
 </template>
+
+<script>
+export default {
+  name: 'Footer',
+  data() {
+    return {
+      facebookUrl: 'https://www.facebook.com',
+      instagramUrl: 'https://www.instagram.com',
+    };
+  }
+}
+</script>
 
 <style>
 footer {

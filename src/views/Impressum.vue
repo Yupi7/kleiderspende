@@ -1,9 +1,3 @@
-<script>
-export default {
-  name: 'Impressum'
-}
-</script>
-
 <template>
   <div class="impressum">
     <h1><u>Impressum</u></h1>
@@ -30,6 +24,12 @@ export default {
     <p>Verantwortlich für den Inhalt gemäß § 55 Abs. 2 RStV: Eyüp Ekici (Adresse siehe oben)</p>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'Impressum'
+}
+</script>
 
 <style>
 .impressum {

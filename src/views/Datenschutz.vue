@@ -1,9 +1,3 @@
-<script>
-export default {
-  name: 'Datenschutz'
-}
-</script>
-
 <template>
   <div class="datenschutz">
     <h1><u>Datenschutzerklärung</u></h1>
@@ -87,6 +81,12 @@ export default {
     </p>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'Datenschutz'
+}
+</script>
 
 <style scoped>
 .datenschutz {

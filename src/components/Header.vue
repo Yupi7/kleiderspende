@@ -1,9 +1,3 @@
-<script>
-export default {
-  name: 'Header'
-}
-</script>
-
 <template>
   <header>
     <div class="logo">
@@ -21,6 +15,12 @@ export default {
     </nav>
   </header>
 </template>
+
+<script>
+export default {
+  name: 'Header'
+}
+</script>
 
 <style>
 header {

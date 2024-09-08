@@ -1,9 +1,3 @@
-<script>
-export default {
-  name: 'BusinessHours'
-}
-</script>
-
 <template>
     <div class="business-hours-box">
         <h2><u>Unsere Öffnungszeiten</u></h2>
@@ -20,6 +14,12 @@ export default {
         </ul>
     </div>
 </template>
+
+<script>
+export default {
+  name: 'BusinessHours'
+}
+</script>
 
 <style>
 .business-hours-box {
